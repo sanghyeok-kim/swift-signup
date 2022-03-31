@@ -24,7 +24,7 @@ class SignUpTitleLabel: UILabel {
     //MARK: Configure View
     
     func configureLabel() {
-        text = Text.signUpTitleLabel
+        text = SignUpViewText.title
         font = UIFont.boldSystemFont(ofSize: 25)
         textColor = .systemGreen
     }

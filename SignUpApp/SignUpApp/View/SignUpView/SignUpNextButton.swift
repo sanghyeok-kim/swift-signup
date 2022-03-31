@@ -24,13 +24,13 @@ class SignUpNextButton: UIButton {
     //MARK: Configure View
     
     func configureLabel() {
-        setTitle(Text.nextButtonTitle, for: .normal)
-        setTitleColor(.green, for: .normal)
+        setTitle(SignUpViewText.nextButtonTitle, for: .normal)
         layer.borderColor = UIColor.black.cgColor
         layer.borderWidth = 1.0
         layer.cornerRadius = 2.5
-        let buttonImage = UIImage(systemName: "chevron.right.circle.fill")
-        setImage(buttonImage, for: .normal)
-        tintColor = .green
+        setImage(UIImage(systemName: "chevron.right.circle.fill"), for: .normal)
+        
+        setTitleColor(.gray, for: .normal)
+        tintColor = .gray
     }
 }

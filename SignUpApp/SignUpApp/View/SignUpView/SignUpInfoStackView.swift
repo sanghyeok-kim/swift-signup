@@ -10,24 +10,24 @@ import UIKit
 class SignUpInfoStackView: UIStackView {
     
     private let idStackView = UIStackView.makeInputStackView()
-    private let idLabel = UILabel.makeInputTitleLabel(text: Text.idLabel)
-    private let idTextField = UITextField.makeInputTextField(placeHolder: Text.idTextFieldPlaceholder)
-    private let idWarningLabel = UILabel.makeInputWarningLabel(text: Text.idWarningLabel)
+    private let idLabel = UILabel.makeInputTitleLabel(text: SignUpViewText.Id.label)
+    private let idTextField = UITextField.makeInputTextField(placeHolder: SignUpViewText.Id.textFieldPlaceholder)
+    private let idWarningLabel = UILabel.makeInputWarningLabel(text: nil)
     
     private let passwordStackView = UIStackView.makeInputStackView()
-    private let passwordLabel = UILabel.makeInputTitleLabel(text: Text.passwordLabel)
-    private let passwordTextField = UITextField.makeInputTextField(placeHolder: Text.passwordTextFieldPlaceholder)
-    private let passwordWarningLabel = UILabel.makeInputWarningLabel(text: Text.passwordWarningLabel)
+    private let passwordLabel = UILabel.makeInputTitleLabel(text: SignUpViewText.Password.label)
+    private let passwordTextField = UITextField.makeInputTextField(placeHolder: SignUpViewText.Password.textFieldPlaceholder)
+    private let passwordWarningLabel = UILabel.makeInputWarningLabel(text: nil)
     
     private let passwordConfirmStackView = UIStackView.makeInputStackView()
-    private let passwordConfirmLabel = UILabel.makeInputTitleLabel(text: Text.passwordConfirmLabel)
+    private let passwordConfirmLabel = UILabel.makeInputTitleLabel(text: SignUpViewText.PasswordConfirm.label)
     private let passwordConfirmTextField = UITextField.makeInputTextField(placeHolder: nil)
-    private let passwordConfirmWarningLabel = UILabel.makeInputWarningLabel(text: Text.passwordConfirmWarningLabel)
+    private let passwordConfirmWarningLabel = UILabel.makeInputWarningLabel(text: nil)
     
     private let nameStackView = UIStackView.makeInputStackView()
-    private let nameLabel = UILabel.makeInputTitleLabel(text: Text.nameLabel)
+    private let nameLabel = UILabel.makeInputTitleLabel(text: SignUpViewText.Name.label)
     private let nameTextField = UITextField.makeInputTextField(placeHolder: nil)
-    private let nameWarningLabel = UILabel.makeInputWarningLabel(text: Text.nameWarningLabel)
+    private let nameWarningLabel = UILabel.makeInputWarningLabel(text: nil)
     
     //MARK: Initializers
     
@@ -129,9 +129,9 @@ private extension UILabel {
         return label
     }
     
-    static func makeInputWarningLabel(text: String) -> UILabel {
+    static func makeInputWarningLabel(text: String?) -> UILabel {
         let label = UILabel()
-        label.text = "\(text)"
+        label.text = "\(text ?? "")"
         label.font = UIFont.systemFont(ofSize: 12)
         label.adjustsFontSizeToFitWidth = true
         return label
@@ -146,8 +146,7 @@ private extension UITextField {
         textField.layer.cornerRadius = 2.5
         textField.leftViewMode = .always
         textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 10))
-        let placeHolder = placeHolder ?? ""
-        textField.placeholder = "\(placeHolder)"
+        textField.placeholder = "\(placeHolder ?? "")"
         return textField
     }
 }
