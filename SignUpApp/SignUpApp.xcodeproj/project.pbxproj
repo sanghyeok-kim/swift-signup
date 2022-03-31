@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		1E0C1E1927F41D080020AA75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0C1E1827F41D080020AA75 /* AppDelegate.swift */; };
 		1E0C1E1B27F41D080020AA75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0C1E1A27F41D080020AA75 /* SceneDelegate.swift */; };
-		1E0C1E1D27F41D080020AA75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0C1E1C27F41D080020AA75 /* ViewController.swift */; };
+		1E0C1E1D27F41D080020AA75 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0C1E1C27F41D080020AA75 /* SignUpViewController.swift */; };
 		1E0C1E2027F41D080020AA75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E0C1E1E27F41D080020AA75 /* Main.storyboard */; };
 		1E0C1E2227F41D090020AA75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E0C1E2127F41D090020AA75 /* Assets.xcassets */; };
 		1E0C1E2527F41D090020AA75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E0C1E2327F41D090020AA75 /* LaunchScreen.storyboard */; };
+		1E0C1E3327F4221C0020AA75 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0C1E3227F4221C0020AA75 /* SignUpView.swift */; };
+		1E0C1E3627F58D530020AA75 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0C1E3527F58D530020AA75 /* Text.swift */; };
+		1E0C1E3927F58F600020AA75 /* SignUpTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0C1E3827F58F600020AA75 /* SignUpTitleLabel.swift */; };
+		1E0C1E3B27F5973F0020AA75 /* SignUpInfoStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0C1E3A27F5973F0020AA75 /* SignUpInfoStackView.swift */; };
+		1E0C1E3D27F59AC40020AA75 /* SignUpNextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0C1E3C27F59AC40020AA75 /* SignUpNextButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1E0C1E1527F41D080020AA75 /* SignUpApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignUpApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E0C1E1827F41D080020AA75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E0C1E1A27F41D080020AA75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1E0C1E1C27F41D080020AA75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1E0C1E1C27F41D080020AA75 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		1E0C1E1F27F41D080020AA75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E0C1E2127F41D090020AA75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E0C1E2427F41D090020AA75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E0C1E2627F41D090020AA75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E0C1E3227F4221C0020AA75 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		1E0C1E3527F58D530020AA75 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		1E0C1E3827F58F600020AA75 /* SignUpTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTitleLabel.swift; sourceTree = "<group>"; };
+		1E0C1E3A27F5973F0020AA75 /* SignUpInfoStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInfoStackView.swift; sourceTree = "<group>"; };
+		1E0C1E3C27F59AC40020AA75 /* SignUpNextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpNextButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			children = (
 				1E0C1E1827F41D080020AA75 /* AppDelegate.swift */,
 				1E0C1E1A27F41D080020AA75 /* SceneDelegate.swift */,
+				1E0C1E3427F58D410020AA75 /* Constants */,
 				1E0C1E3127F421D10020AA75 /* Model */,
 				1E0C1E3027F421C70020AA75 /* Controller */,
 				1E0C1E2F27F421BF0020AA75 /* View */,
@@ -72,6 +83,7 @@
 		1E0C1E2F27F421BF0020AA75 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1E0C1E3727F58F360020AA75 /* SignUpView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -79,7 +91,7 @@
 		1E0C1E3027F421C70020AA75 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				1E0C1E1C27F41D080020AA75 /* ViewController.swift */,
+				1E0C1E1C27F41D080020AA75 /* SignUpViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -89,6 +101,25 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1E0C1E3427F58D410020AA75 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				1E0C1E3527F58D530020AA75 /* Text.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		1E0C1E3727F58F360020AA75 /* SignUpView */ = {
+			isa = PBXGroup;
+			children = (
+				1E0C1E3227F4221C0020AA75 /* SignUpView.swift */,
+				1E0C1E3C27F59AC40020AA75 /* SignUpNextButton.swift */,
+				1E0C1E3A27F5973F0020AA75 /* SignUpInfoStackView.swift */,
+				1E0C1E3827F58F600020AA75 /* SignUpTitleLabel.swift */,
+			);
+			path = SignUpView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,9 +193,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E0C1E1D27F41D080020AA75 /* ViewController.swift in Sources */,
+				1E0C1E3327F4221C0020AA75 /* SignUpView.swift in Sources */,
+				1E0C1E3627F58D530020AA75 /* Text.swift in Sources */,
+				1E0C1E3D27F59AC40020AA75 /* SignUpNextButton.swift in Sources */,
+				1E0C1E3B27F5973F0020AA75 /* SignUpInfoStackView.swift in Sources */,
+				1E0C1E1D27F41D080020AA75 /* SignUpViewController.swift in Sources */,
 				1E0C1E1927F41D080020AA75 /* AppDelegate.swift in Sources */,
 				1E0C1E1B27F41D080020AA75 /* SceneDelegate.swift in Sources */,
+				1E0C1E3927F58F600020AA75 /* SignUpTitleLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
